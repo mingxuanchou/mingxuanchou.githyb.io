@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
+</head>
+<body>
+
+    <!-- 🔽 加入選單 🔽 -->
+    <nav>
+        <ul>
+            <li><a href="{{ site.baseurl }}/">🏠 首頁</a></li>
+            <li><a href="{{ site.baseurl }}/about">ℹ️ 關於我</a></li>
+            <li><a href="{{ site.baseurl }}/blog">📝 部落格</a></li>
+            <li><a href="{{ site.baseurl }}/contact">📧 聯絡我</a></li>
+        </ul>
+    </nav>
+    <!-- 🔼 選單結束 🔼 -->
+
+    <div class="content">
+        {{ content }}  <!-- 這裡會載入各個頁面的內容 -->
+    </div>
+
+</body>
+</html>
