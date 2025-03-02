@@ -1,4 +1,8 @@
 function toggleMenu() {
-    var menu = document.querySelector(".menu");
-    menu.classList.toggle("menu-active");
+    var sidebar = document.getElementById("sidebar");
+    if (sidebar.style.width === "250px") {
+        sidebar.style.width = "0";
+    } else {
+        sidebar.style.width = "250px";
+    }
 }
