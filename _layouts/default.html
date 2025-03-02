@@ -8,10 +8,13 @@
 </head>
 <body>
 
-    <!-- 🔽 漢堡選單 🔽 -->
-    <div class="menu-container">
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <nav class="menu">
+    <!-- 🔽 漢堡選單按鈕 -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <!-- 🔽 側邊選單 -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleMenu()">×</button>
+        <nav>
             <ul>
                 <li><a href="{{ site.baseurl }}/">🏠 首頁</a></li>
                 <li><a href="{{ site.baseurl }}/about">ℹ️ 關於我</a></li>
@@ -20,7 +23,7 @@
             </ul>
         </nav>
     </div>
-    <!-- 🔼 漢堡選單結束 🔼 -->
+    <!-- 🔼 側邊選單結束 -->
 
     <div class="content">
         {{ content }}  <!-- 這裡會載入各個頁面的內容 -->
