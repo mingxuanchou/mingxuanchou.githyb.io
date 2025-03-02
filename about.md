@@ -1,11 +1,10 @@
 ---
 layout: default
-title: 關於我
+title: About me
 ---  
- 
-這是我的個人網站!
 
-# 🎓學歷
+
+# 🎓Education
 - Ficksburg High School
   
-- 國立陽明交通大學 NYCU
+- NYCU IMF
