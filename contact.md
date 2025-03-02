@@ -1,9 +1,9 @@
 ---
 layout: default
-title: 聯絡
+title: Contacts
 ---
 
-# 聯絡
+# Contacts
 
 - Email: angela.mg12@nycu.edu.tw  
 
