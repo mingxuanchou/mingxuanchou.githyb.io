@@ -8,20 +8,25 @@
 </head>
 <body>
 
-    <!-- 🔽 加入選單 🔽 -->
-    <nav>
-        <ul>
-            <li><a href="{{ site.baseurl }}/">🏠 首頁</a></li>
-            <li><a href="{{ site.baseurl }}/about">ℹ️ 關於我</a></li>
-            <li><a href="{{ site.baseurl }}/blog">📝 部落格</a></li>
-            <li><a href="{{ site.baseurl }}/contact">📧 聯絡我</a></li>
-        </ul>
-    </nav>
-    <!-- 🔼 選單結束 🔼 -->
+    <!-- 🔽 漢堡選單 🔽 -->
+    <div class="menu-container">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav class="menu">
+            <ul>
+                <li><a href="{{ site.baseurl }}/">🏠 首頁</a></li>
+                <li><a href="{{ site.baseurl }}/about">ℹ️ 關於我</a></li>
+                <li><a href="{{ site.baseurl }}/blog">📝 部落格</a></li>
+                <li><a href="{{ site.baseurl }}/contact">📧 聯絡我</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- 🔼 漢堡選單結束 🔼 -->
 
     <div class="content">
         {{ content }}  <!-- 這裡會載入各個頁面的內容 -->
     </div>
+
+    <script src="{{ site.baseurl }}/assets/script.js"></script>
 
 </body>
 </html>
