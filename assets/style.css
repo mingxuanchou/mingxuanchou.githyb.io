@@ -1,27 +1,60 @@
+/* 基本設定 */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.menu {
-    display: none;
-    position: absolute;
-    top: 50px;
-    left: 10px;
-    background-color: white;
-    border: 1px solid #ddd;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    width: 200px;
+/* 🔽 側邊欄樣式 */
+.sidebar {
+    height: 100%;
+    width: 0;  /* 初始狀態隱藏 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
 }
 
-.menu-active {
+/* 選單內的連結 */
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
     display: block;
+    transition: 0.2s;
 }
 
-.menu-toggle {
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+/* 關閉按鈕 */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
     background: none;
     border: none;
-    font-size: 24px;
+    color: white;
     cursor: pointer;
+}
+
+/* 漢堡選單按鈕 */
+.menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
     padding: 10px;
+    cursor: pointer;
+}
+
+/* 當選單開啟時 */
+.sidebar-active {
+    width: 250px;
 }
